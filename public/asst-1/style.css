@@ -1,0 +1,27 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    background-color: #0a1659;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+body {
+    background: #829FD9;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+p {
+    font-style: italic;
+    font-weight: 400;
+}
