@@ -126,15 +126,12 @@ html, body {
     flex: 4;
   }
   
-  .col1 {
-    margin-right: 15px;
-  }
-  
   .styled-img {
-    width: 250px;
+    border-style: solid;
+    border-width: 1px;
+    width: 195px;
     display: block;
     border-radius: 4px;
-    border-width: 1px;
   }
   
   .footer {
@@ -150,8 +147,6 @@ html, body {
   
   .container div {
     display: flex;
-    flex-direction: column;
-  
   }
 
   .col2 {
@@ -174,6 +169,10 @@ html, body {
     .container div {
       flex-direction: column;
     }
+
+    .col1 {
+      margin-right: 15px;
+    }
   }
   
   @media screen and (max-width: 1000px) {
@@ -181,16 +180,17 @@ html, body {
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      flex: 1 0 auto
+      flex: 1 0 auto;
+      margin-right: 0;
     }
 
     .col2 {
       margin-top: 15px;
     }
+
     .container {
       justify-content: center;
-      flex-direction: column;
-  
+      flex-direction: row;
     }
 
     .container div {
