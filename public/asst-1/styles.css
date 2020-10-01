@@ -126,22 +126,6 @@ html, body {
     flex: 4;
   }
   
-  /*.aside {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 2;
-  }
-  
-  .aside a {
-    display: flex;
-    flex-basis: 50%;
-  }
-  
-  .aside img {
-    width: 100%;
-    height: auto;
-  }*/
-  
   .col1 {
     margin-right: 15px;
   }
@@ -155,19 +139,6 @@ html, body {
   
   .footer {
     margin-top: 10px;
-  }
-  
-  @media screen and (max-width: 1000px) {
-    .container {
-      justify-content: center;
-  
-    }
-  }
-  
-  @media screen and (min-width: 1000px) {
-    .container {
-      justify-content: space-between;
-    }
   }
   
   .container {
@@ -195,6 +166,41 @@ html, body {
     background: #FFF;
   }
   
+  @media screen and (min-width: 1000px) {
+    .container {
+      justify-content: space-between;
+    }
+
+    .container div {
+      flex-direction: column;
+    }
+  }
   
+  @media screen and (max-width: 1000px) {
+    .col1 {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1 0 auto
+    }
+
+    .col2 {
+      margin-top: 15px;
+    }
+    .container {
+      justify-content: center;
+      flex-direction: column;
   
-  
+    }
+
+    .container div {
+      flex-direction: row;
+    }
+    .subtitle {
+      display: flex;
+      margin-top: 0;
+      align-items: center;
+      margin-right: 20%;
+      height: 10%;
+    }
+  }
