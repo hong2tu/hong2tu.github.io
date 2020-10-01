@@ -54,19 +54,25 @@ p, li {
 /* || header layout */
 
 .header {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
 }
 
 body > * {
-  background-color: red;
+  background-color: pink;
   padding: 1%;
 }
 
-.main, .header, nav, .article, .aside, .footer, section {
+.main, nav, .article, .aside, .footer, section {
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
+}
+
+.header {
+  background-color: darkslategrey;
+  padding: 15px;
 }
 
 h1 {
@@ -136,6 +142,42 @@ nav a, nav span {
   height: auto;
 }
 
+.col1 {
+  margin-right: 15px;
+}
+
+.col1 img {
+  display: block;
+  border-radius: 4px;
+}
+
 .footer {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    justify-content: center;
+
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    justify-content: space-between;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+}
+
+
+
