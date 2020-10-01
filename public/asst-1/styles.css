@@ -126,7 +126,7 @@ html, body {
     flex: 4;
   }
   
-  .aside {
+  /*.aside {
     display: flex;
     flex-flow: row wrap;
     flex: 2;
@@ -140,13 +140,13 @@ html, body {
   .aside img {
     width: 100%;
     height: auto;
-  }
+  }*/
   
   .col1 {
     margin-right: 15px;
   }
   
-  .col1 img {
+  .styled-img {
     width: 250px;
     display: block;
     border-radius: 4px;
@@ -172,13 +172,27 @@ html, body {
   
   .container {
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   
   .container div {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .col2 {
+    flex: 50%;
+    background: #FFF;
+    padding: 10px;
+  }
+
+  .subtitle {
+    padding: 10px;
+    margin-top: 10px;
+    background: #FFF;
   }
   
   
