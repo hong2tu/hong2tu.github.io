@@ -184,13 +184,14 @@ html, body {
       margin-right: 0;
     }
 
-    .col2 {
-      margin-top: 15px;
-    }
-
     .container {
       justify-content: center;
       flex-direction: row;
+    }
+
+    .col2 {
+      margin-top: 15px;
+      flex-direction: column!important;
     }
 
     .container div {
