@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Hong Tu Lab 5</title>
+  <title>Hong Tu Lab 4</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-  <h1>Hong Tu Lab 5</h1>
+  <h1>Hong Tu Lab 4</h1>
   <div>
     <form action="/api" method="post">
       <ul class="flex-outer">
@@ -33,7 +33,7 @@
           <textarea rows="5" cols="33" id="message" name="message" placeholder="Enter your message here"></textarea>
         </li>
         <li>
-          <p>Age</p>
+          <p class="checkbox-list-label">Age</p>
           <ul class="flex-inner">
             <li>
               <input type="checkbox" id="eighteen-to-thirtyfive" name="18-35cb" />
@@ -51,14 +51,21 @@
           </ul>
         </li>
         <li>
-          <button type="submit" name="submitButton" id="button">Submit</button>
-          <button type="submit" onclick="testFunction()" id="button" name="button_2">Activate</button>
+          <button class ="button" type="submit" name="submitButton" id="button">Submit</button>
+          <button class = "button2" type="button" onClick="testFunction()" id="button2" name="button_2">Activate</button>
         </li>
       </ul>
     </form>
   </div>
 
   <script>
+    const buttn = document.querySelector('button');
+    const hd1 = document.querySelector('h1');
+    const froot = document.querySelector('.checkbox-list-label');
+    const flxouter = document.querySelector('.flex-outer');
+    const iner = document.querySelectorAll('.flex-inner label');
+    const fruitarray = Array.from(iner);
+    const pagetitle = document.querySelector('title');
 
     function testFunction() {
       fetch('/api')
@@ -66,6 +73,21 @@
         .then((response) => {
           console.log(response);
         })
+        document.body.style.backgroundColor = '#e6929e';
+        pagetitle.innerHTML = 'Hong Tu Lab 5';
+        hd1.innerHTML = 'Lab 5 for Hong Tu';
+
+        flxouter.style = 'margin: 0px auto;';
+
+        froot.innerHTML = 'Fruits';
+
+
+        fruitarray.forEach(froot => {
+          fruitarray[0].innerHTML = 'Pomelo';
+          fruitarray[1].innerHTML = 'Persimmon';
+          fruitarray[2].innerHTML = 'Pear';
+
+        });
     }
   
   
