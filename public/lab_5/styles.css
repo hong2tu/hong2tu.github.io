@@ -48,4 +48,8 @@ body {
 .button, .button2{
   color: black;
   margin-right: 10px;
+  
+}
+.centered_h1{
+  text-align: center;
 }
