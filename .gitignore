@@ -2,9 +2,6 @@
 # Course specific
 # -------------------------------------------------
 public/answer_key/private
-public/demos
-answer_key
-public/answer_key
 .env
 
 # -------------------------------------------------
